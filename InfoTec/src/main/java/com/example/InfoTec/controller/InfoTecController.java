@@ -15,7 +15,8 @@ public class InfoTecController {
 
     @Autowired
     private PecasRepository repository;
-
+    
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
     @PostMapping
     public void savePecas(@RequestBody PecasRequestDTO data){
         Pecas pecasData = new Pecas(data);

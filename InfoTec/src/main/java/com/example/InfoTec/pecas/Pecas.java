@@ -21,7 +21,6 @@ public class Pecas {
     private Integer price;
 
     public Pecas (PecasRequestDTO data) {
-        this.id = data.id();
         this.image = data.image();
         this.price = data.price();
         this.title = data.title();
